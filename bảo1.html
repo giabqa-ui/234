@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thông tin cá nhân</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            width: 500px;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        label {
+            width: 150px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        textarea {
+            flex: 1;
+            padding: 5px;
+        }
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+        }
+        textarea {
+            height: 80px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+        button {
+            padding: 5px 15px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h2>
+
+    <form>
+        <div class="form-group">
+            <label>Tài khoản</label>
+            <input type="text" name="username">
+        </div>
+
+        <div class="form-group">
+            <label>Mật khẩu</label>
+            <input type="password" name="password">
+        </div>
+
+        <div class="form-group">
+            <label>Nhập lại mật khẩu</label>
+            <input type="password" name="confirm">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label>Họ tên</label>
+            <input type="text" name="fullname">
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" checked> Nam</label>
+                <label><input type="radio" name="gender"> Nữ</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Quê quán</label>
+            <select>
+                <option>Cần Thơ</option>
+                <option>Hà Nội</option>
+                <option>TP.HCM</option>
+                <option>Đà Nẵng</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Sở thích</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" checked> Điện ảnh</label>
+                <label><input type="checkbox"> Âm nhạc</label>
+                <label><input type="checkbox"> Thể thao</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Ghi chú cá nhân</label>
+            <textarea></textarea>
+        </div>
+        <div class="buttons">
+            <button type="submit">Lưu</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
